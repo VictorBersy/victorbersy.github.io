@@ -2,3 +2,5 @@ name: victorbersy.github.io
 markdown: redcarpet
 pygments: true
 permalink: /blog/:categories/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "blog/:num"
