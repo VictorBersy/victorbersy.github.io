@@ -1,0 +1,53 @@
+@import "settings";
+@import "normalize";
+
+// Grid
+$row-width: rem-calc(1400);
+
+// Colors
+$body-bg: #231F1F;
+$body-font-color: #FFF;
+$primary-color: #1CAF9A;
+$secondary-color: #E7E7E7;
+$alert-color: #F04124;
+$success-color: #43AC6A;
+$warning-color: #F08A24;
+$info-color: #A0D3E8;
+
+// Topbar
+$topbar-height: 70px;
+$topbar-bg: $primary-color;
+$topbar-link-bg-hover: darken($topbar-bg, 5%);
+$topbar-margin-bottom: rem-calc(30);
+
+article {
+	padding: 0px;
+	margin-bottom: rem-calc(40);
+}
+article h2 {
+	color: #EBEBEB;
+	font-weight: 600;
+}
+article .content, article .infos {
+	padding: 15px;
+}
+.article-img img {
+	width: 100%;
+}
+.infos-block * {
+	display: inline;
+	font-style: italic;
+}
+.commits .sha1 {
+	font-size: 12px;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	color: darken($body-font-color, 40%);
+}
+.commits .message {
+	color: darken($body-font-color, 40%);
+}
+.commits .where {
+	color: darken($body-font-color, 40%);
+}
+
+@import "foundation";
