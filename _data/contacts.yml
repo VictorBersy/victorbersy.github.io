@@ -1,0 +1,17 @@
+- name: Github
+  url : https://github.com/VictorBersy/
+
+- name: Last.Fm
+  url : http://www.lastfm.fr/user/bigvivi/
+
+- name: Facebook
+  url : https://www.facebook.com/victor.bersy/
+
+- name: Twitter
+  url : https://twitter.com/VictorBersy/
+
+- name: Email
+  url : mailto:victor.bersy+website@gmail.com
+
+- name: Google +
+  url : https://plus.google.com/+VictorBersy/
