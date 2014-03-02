@@ -1,17 +1,23 @@
 - name: Github
   url : https://github.com/VictorBersy/
-
-- name: Last.Fm
-  url : http://www.lastfm.fr/user/bigvivi/
-
-- name: Facebook
-  url : https://www.facebook.com/victor.bersy/
+  color: "#171515"
 
 - name: Twitter
   url : https://twitter.com/VictorBersy/
+  color: "#55ACEE"
 
 - name: Email
   url : mailto:victor.bersy+website@gmail.com
+  color: "#7AF6FF"
+
+- name: Facebook
+  url : https://www.facebook.com/victor.bersy/
+  color: "#3B5998"
 
 - name: Google +
   url : https://plus.google.com/+VictorBersy/
+  color: "#DD4B39"
+
+- name: Last.Fm
+  url : http://www.lastfm.fr/user/bigvivi/
+  color: "#D11008"
