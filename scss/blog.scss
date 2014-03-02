@@ -20,12 +20,15 @@ $topbar-bg: $primary-color;
 $topbar-link-bg-hover: darken($topbar-bg, 5%);
 $topbar-margin-bottom: rem-calc(30);
 
+// Types
+$header-font-color: #EBEBEB;
+$subheader-font-color: darken($header-font-color, 30%) !default;
+
 article {
 	padding: 0px;
 	margin-bottom: rem-calc(40);
 }
 article h2 {
-	color: #EBEBEB;
 	font-weight: 600;
 }
 article .content, article .infos {

@@ -420,47 +420,46 @@ table {
   border-spacing: 0;
 }
 
-/* line 23, ../scss/blog.scss */
+/* line 27, ../scss/blog.scss */
 article {
   padding: 0px;
   margin-bottom: 2.5rem;
 }
 
-/* line 27, ../scss/blog.scss */
+/* line 31, ../scss/blog.scss */
 article h2 {
-  color: #EBEBEB;
   font-weight: 600;
 }
 
-/* line 31, ../scss/blog.scss */
+/* line 34, ../scss/blog.scss */
 article .content, article .infos {
   padding: 15px;
 }
 
-/* line 34, ../scss/blog.scss */
+/* line 37, ../scss/blog.scss */
 .article-img img {
   width: 100%;
 }
 
-/* line 37, ../scss/blog.scss */
+/* line 40, ../scss/blog.scss */
 .infos-block * {
   display: inline;
   font-style: italic;
 }
 
-/* line 41, ../scss/blog.scss */
+/* line 44, ../scss/blog.scss */
 .commits .sha1 {
   font-size: 12px;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   color: #999999;
 }
 
-/* line 46, ../scss/blog.scss */
+/* line 49, ../scss/blog.scss */
 .commits .message {
   color: #999999;
 }
 
-/* line 49, ../scss/blog.scss */
+/* line 52, ../scss/blog.scss */
 .commits .where {
   color: #999999;
 }
@@ -6363,7 +6362,7 @@ p.lead {
 /* line 116, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #9f9f9f;
   font-weight: 300;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -6434,7 +6433,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #222222;
+  color: #ebebeb;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -6443,7 +6442,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 192, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: white;
   line-height: 0;
 }
 
@@ -6625,7 +6624,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: white;
 }
 /* line 332, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -6634,14 +6633,14 @@ blockquote cite:before {
 /* line 337, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: white;
 }
 
 /* line 343, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: white;
 }
 
 /* Microformats */
