@@ -420,46 +420,51 @@ table {
   border-spacing: 0;
 }
 
-/* line 27, ../scss/blog.scss */
+/* line 24, ../scss/blog.scss */
+.top-bar > .title-area {
+  background: #189987;
+}
+
+/* line 32, ../scss/blog.scss */
 article {
   padding: 0px;
   margin-bottom: 2.5rem;
 }
 
-/* line 31, ../scss/blog.scss */
+/* line 36, ../scss/blog.scss */
 article h2 {
   font-weight: 600;
 }
 
-/* line 34, ../scss/blog.scss */
+/* line 39, ../scss/blog.scss */
 article .content, article .infos {
   padding: 15px;
 }
 
-/* line 37, ../scss/blog.scss */
+/* line 42, ../scss/blog.scss */
 .article-img img {
   width: 100%;
 }
 
-/* line 40, ../scss/blog.scss */
+/* line 45, ../scss/blog.scss */
 .infos-block * {
   display: inline;
   font-style: italic;
 }
 
-/* line 44, ../scss/blog.scss */
+/* line 49, ../scss/blog.scss */
 .commits .sha1 {
   font-size: 12px;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   color: #999999;
 }
 
-/* line 49, ../scss/blog.scss */
+/* line 54, ../scss/blog.scss */
 .commits .message {
   color: #999999;
 }
 
-/* line 52, ../scss/blog.scss */
+/* line 57, ../scss/blog.scss */
 .commits .where {
   color: #999999;
 }
@@ -6902,7 +6907,7 @@ meta.foundation-mq-topbar {
 /* line 162, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 {
   line-height: 70px;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   margin: 0;
 }
 /* line 166, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7010,14 +7015,14 @@ meta.foundation-mq-topbar {
   padding: 12px 0 12px 0;
   padding-left: 23.33333px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: normal;
   background: #333333;
 }
 /* line 293, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
   background: #1caf9a;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   padding-right: 23.33333px;
   padding-left: 23.33333px;
 }

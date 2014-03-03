@@ -19,6 +19,11 @@ $topbar-height: 70px;
 $topbar-bg: $primary-color;
 $topbar-link-bg-hover: darken($topbar-bg, 5%);
 $topbar-margin-bottom: rem-calc(30);
+$topbar-title-font-size: rem-calc(19);
+$topbar-link-font-size: rem-calc(16);
+.top-bar > .title-area {
+	background: darken($topbar-bg, 5%);
+}
 
 // Types
 $header-font-color: #EBEBEB;
