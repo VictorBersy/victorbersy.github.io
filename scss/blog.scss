@@ -29,6 +29,8 @@ $topbar-link-font-size: rem-calc(16);
 $header-font-color: #EBEBEB;
 $subheader-font-color: darken($header-font-color, 30%) !default;
 
+
+// Article
 article {
 	padding: 0px;
 	margin-bottom: rem-calc(40);
@@ -46,16 +48,25 @@ article .content, article .infos {
 	display: inline;
 	font-style: italic;
 }
-.commits .sha1 {
-	font-size: 12px;
-	font-family: Consolas, "Liberation Mono", Courier, monospace;
-	color: darken($body-font-color, 40%);
-}
-.commits .message {
-	color: darken($body-font-color, 40%);
-}
-.commits .where {
-	color: darken($body-font-color, 40%);
-}
 
+// Sidebar
+.sidebar {
+	// About me
+	.short_bio {
+		font-size: rem-calc(14);
+		line-height: 1.4;
+	}
+	// Commits
+	.commits .sha1 {
+		font-size: 12px;
+		font-family: Consolas, "Liberation Mono", Courier, monospace;
+		color: darken($body-font-color, 40%);
+	}
+	.commits .message {
+		color: darken($body-font-color, 40%);
+	}
+	.commits .where {
+		color: darken($body-font-color, 40%);
+	}
+}
 @import "foundation";

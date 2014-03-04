@@ -425,47 +425,50 @@ table {
   background: #189987;
 }
 
-/* line 32, ../scss/blog.scss */
+/* line 34, ../scss/blog.scss */
 article {
   padding: 0px;
   margin-bottom: 2.5rem;
 }
 
-/* line 36, ../scss/blog.scss */
+/* line 38, ../scss/blog.scss */
 article h2 {
   font-weight: 600;
 }
 
-/* line 39, ../scss/blog.scss */
+/* line 41, ../scss/blog.scss */
 article .content, article .infos {
   padding: 15px;
 }
 
-/* line 42, ../scss/blog.scss */
+/* line 44, ../scss/blog.scss */
 .article-img img {
   width: 100%;
 }
 
-/* line 45, ../scss/blog.scss */
+/* line 47, ../scss/blog.scss */
 .infos-block * {
   display: inline;
   font-style: italic;
 }
 
-/* line 49, ../scss/blog.scss */
-.commits .sha1 {
+/* line 55, ../scss/blog.scss */
+.sidebar .short_bio {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+/* line 60, ../scss/blog.scss */
+.sidebar .commits .sha1 {
   font-size: 12px;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   color: #999999;
 }
-
-/* line 54, ../scss/blog.scss */
-.commits .message {
+/* line 65, ../scss/blog.scss */
+.sidebar .commits .message {
   color: #999999;
 }
-
-/* line 57, ../scss/blog.scss */
-.commits .where {
+/* line 68, ../scss/blog.scss */
+.sidebar .commits .where {
   color: #999999;
 }
 
