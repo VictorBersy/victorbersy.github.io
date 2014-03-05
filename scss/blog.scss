@@ -52,7 +52,7 @@ article .content, article .infos {
 // Sidebar
 .sidebar {
 	// About me
-	.short_bio {
+	.short-bio p {
 		font-size: rem-calc(14);
 		line-height: 1.4;
 	}
@@ -67,6 +67,20 @@ article .content, article .infos {
 	}
 	.commits .where {
 		color: darken($body-font-color, 40%);
+	}
+}
+// Footbar
+.footbar {
+	background-color: lighten($body-bg, 40%);
+	padding: rem-calc(10);
+	// About me
+	.short-bio p {
+		font-size: rem-calc(14);
+		line-height: 1.4;
+	}
+	.short-bio h4 {
+		color: $body-font-color;
+		font-weight: bold;
 	}
 }
 @import "foundation";

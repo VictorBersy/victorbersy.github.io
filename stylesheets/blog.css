@@ -453,7 +453,7 @@ article .content, article .infos {
 }
 
 /* line 55, ../scss/blog.scss */
-.sidebar .short_bio {
+.sidebar .short-bio p {
   font-size: 0.875rem;
   line-height: 1.4;
 }
@@ -470,6 +470,22 @@ article .content, article .infos {
 /* line 68, ../scss/blog.scss */
 .sidebar .commits .where {
   color: #999999;
+}
+
+/* line 73, ../scss/blog.scss */
+.footbar {
+  background-color: #8e8080;
+  padding: 0.625rem;
+}
+/* line 77, ../scss/blog.scss */
+.footbar .short-bio p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+/* line 81, ../scss/blog.scss */
+.footbar .short-bio h4 {
+  color: white;
+  font-weight: bold;
 }
 
 /* line 287, ../bower_components/foundation/scss/foundation/components/_global.scss */
