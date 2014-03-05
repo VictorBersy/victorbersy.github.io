@@ -1,0 +1,22 @@
+    <div class="show-for-small-only row footbar">
+    	<div class="small-4 columns">
+    		<img src="{{ site.data.about_me.photo }}?s=256"/>
+    	</div>
+    	<div class="small-8 columns short-bio">
+    		<h4 class="subheader"><i class="fi-info"></i>About Me</h4>
+    		<p>{{ site.data.about_me.short_bio }}</p>
+    	</div>
+    </div>
+
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+
+  </body>
+</html>
