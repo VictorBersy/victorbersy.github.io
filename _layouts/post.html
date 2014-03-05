@@ -1,9 +1,28 @@
 ---
-layout: default
+layout: blog
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+          <div class="row">
+            <div class="small-12 columns">
+              <article>
+				<a href="{{ page.url }}"><h2>{{ page.title }}</h2></a>
+              {% if page.header-image %}
+                <header>
+                  <a class="article-img" href="#">
+                    <img src="/images/{{ page.header-image }}">
+                  </a>
+                </header>
+              {% endif %}
+                <div class="infos">
+                  <div class="infos-block">
+                    <a class="author" href="http://victorbersy.eu/" rel="author"><i class="fi-torso"></i> {{ page.author }}</a>
+                    <p class="date"><i class="fi-calendar"></i> Publié le : {{ page.date | date: "%d/%m/%Y" }}</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>
+                    {{ content }}
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
