@@ -3,62 +3,62 @@ layout: blog
 title: Blog
 ---
 
-    <div class="row">
-      <div class="small-9 columns articles">
-  <!-- DYNAMIC ARTICLE -->
-      {% for post in paginator.posts %}
-        <div class="row">
-          <div class="small-12 columns">
-            <article>
-            {% if post.header-image %}
-              <header>
-                <a class="article-img" href="#">
-                  <img src="/images/{{ post.header-image }}">
-                </a>
-              </header>
-            {% endif %}
-              <div class="infos">
-                <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-                <div class="infos-block">
-                  <a class="author" href="http://victorbersy.eu/" rel="author"><i class="fi-torso"></i> {{ post.author }}</a>
-                  <p class="date"><i class="fi-calendar"></i> Publié le : {{ post.date | date: "%d/%m/%Y" }}</p>
-                </div>
-              </div>
-              <div class="content">
-                <p>
-                  {{ post.excerpt }} <a href="{{ post.url }}">Lire la suite &rarr;</a>
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      {% endfor %}
-  <!-- END DYNAMIC ARTICLE -->
-        <div class="row">
-          {% if paginator.total_pages > 1 %}
-          <div class="pagination">
-            {% if paginator.previous_page %}
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-            {% else %}
-              <span>&laquo; Prev</span>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) %}
-              {% if page == paginator.page %}
-                <em>{{ page }}</em>
-              {% elsif page == 1 %}
-                <a href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-              {% else %}
-                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <div class="row">
+        <div class="small-12 medium-9 large-8 columns articles">
+    <!-- DYNAMIC ARTICLE -->
+        {% for post in paginator.posts %}
+          <div class="row">
+            <div class="small-12 columns">
+              <article>
+              {% if post.header-image %}
+                <header>
+                  <a class="article-img" href="#">
+                    <img src="/images/{{ post.header-image }}">
+                  </a>
+                </header>
               {% endif %}
-            {% endfor %}
+                <div class="infos">
+                  <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+                  <div class="infos-block">
+                    <a class="author" href="http://victorbersy.eu/" rel="author"><i class="fi-torso"></i> {{ post.author }}</a>
+                    <p class="date"><i class="fi-calendar"></i> Publié le : {{ post.date | date: "%d/%m/%Y" }}</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>
+                    {{ post.excerpt }} <a href="{{ post.url }}">Lire la suite &rarr;</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        {% endfor %}
+    <!-- END DYNAMIC ARTICLE -->
+          {% if paginator.total_pages > 1 %}
+          <div class="row">
+            <div class="pagination">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+              {% else %}
+                <span>&laquo; Prev</span>
+              {% endif %}
 
-            {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-            {% else %}
-              <span>Next &raquo;</span>
-            {% endif %}
+              {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                  <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                  <a href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+              {% endfor %}
+
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+              {% else %}
+                <span>Next &raquo;</span>
+              {% endif %}
+            </div>
           </div>
           {% endif %}
         </div>
-      </div>
