@@ -56,17 +56,8 @@ article .content, article .infos {
 		font-size: rem-calc(14);
 		line-height: 1.4;
 	}
-	// Commits
-	.commits .sha1 {
-		font-size: 12px;
-		font-family: Consolas, "Liberation Mono", Courier, monospace;
-		color: darken($body-font-color, 40%);
-	}
-	.commits .message {
-		color: darken($body-font-color, 40%);
-	}
-	.commits .where {
-		color: darken($body-font-color, 40%);
+	.profile-picture {
+		padding-bottom: 15px;
 	}
 }
 // Footbar

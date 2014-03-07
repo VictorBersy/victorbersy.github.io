@@ -457,32 +457,22 @@ article .content, article .infos {
   font-size: 0.875rem;
   line-height: 1.4;
 }
-/* line 60, ../scss/blog.scss */
-.sidebar .commits .sha1 {
-  font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  color: #999999;
-}
-/* line 65, ../scss/blog.scss */
-.sidebar .commits .message {
-  color: #999999;
-}
-/* line 68, ../scss/blog.scss */
-.sidebar .commits .where {
-  color: #999999;
+/* line 59, ../scss/blog.scss */
+.sidebar .profile-picture {
+  padding-bottom: 15px;
 }
 
-/* line 73, ../scss/blog.scss */
+/* line 64, ../scss/blog.scss */
 .footbar {
   background-color: #8e8080;
   padding: 0.625rem;
 }
-/* line 77, ../scss/blog.scss */
+/* line 68, ../scss/blog.scss */
 .footbar .short-bio p {
   font-size: 0.875rem;
   line-height: 1.4;
 }
-/* line 81, ../scss/blog.scss */
+/* line 72, ../scss/blog.scss */
 .footbar .short-bio h4 {
   color: white;
   font-weight: bold;
