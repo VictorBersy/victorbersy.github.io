@@ -47,3 +47,8 @@
   class_name: instagram
   url : http://instagram.com/victorbersy
   color: "#3A6990"
+
+- name: Stack Overflow
+  class_name: stack-overflow
+  url : http://stackoverflow.com/users/3321058/victorbersy
+  color: "#F68A1F"
