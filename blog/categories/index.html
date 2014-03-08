@@ -1,0 +1,16 @@
+---
+layout: blog
+title: Categories
+---
+    <div class="row">
+      <div class="small-9 large-8 columns categories-list">
+        <h1>Categories List</h1>
+        <ul class="posts">
+          {% for category in site.categories %}
+          	<h2 id="{{ category[0] }}">{{ category[0] | capitalize }}</h2>
+          	{% for post in category[1] %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+          	{% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
