@@ -3,11 +3,25 @@ layout: blog
 title: Posts
 ---
     <div class="row">
-      <div class="small-9 large-8 columns articles-list">
-        <h1>Blog Posts</h1>
-        <ul class="posts">
-          {% for post in site.posts %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
+	      	<div class="small-9 large-8 columns articles-list">
+	        <h1>Blog Posts</h1>
+			{% for post in site.posts %}
+			{% unless post.next %}
+			<h2>{{ post.date | date: '%Y' }}</h2>
+			<ul class="posts">
+			{% else %}
+			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+			{% if year != nyear %}
+			</ul>
+			<h2>{{ post.date | date: '%Y' }}</h2>
+			<ul>
+			{% endif %}
+			{% endunless %}
+			<li>
+				<time>{{ post.date | date_to_string }}</time> &raquo;
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+			</ul>
+		</div>
