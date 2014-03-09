@@ -1,54 +1,54 @@
 - name: Github
-  class_name: github
+  class_name: social-github
   url : https://github.com/VictorBersy/
   color: "#171515"
 
 - name: Twitter
-  class_name: twitter
+  class_name: social-twitter
   url : https://twitter.com/VictorBersy/
   color: "#55ACEE"
 
 - name: Email
-  class_name: email
+  class_name: mail
   url : mailto:victor.bersy+website@gmail.com
   color: "#7AF6FF"
 
 - name: Facebook
-  class_name: facebook
+  class_name: social-facebook
   url : https://www.facebook.com/victor.bersy/
   color: "#3B5998"
 
 - name: Google +
-  class_name: google-plus
+  class_name: social-google-plus
   url : https://plus.google.com/+VictorBersy/
   color: "#DD4B39"
 
 - name: Last.Fm
-  class_name: last-fm
+  class_name: social-lastfm
   url : http://www.lastfm.fr/user/bigvivi/
   color: "#D11008"
 
 - name: Rdio
-  class_name: rdio
+  class_name: social-rdio
   url : http://www.rdio.com/people/VictorBersy/
   color: "#006ED2"
 
 - name: Steam
-  class_name: steam
+  class_name: social-steam
   url : http://steamcommunity.com/id/bigvivi/
   color: "#020202"
 
 - name: Foursquare
-  class_name: foursquare
+  class_name: social-foursquare
   url : https://fr.foursquare.com/user/3016449
   color: "#006ED2"
 
 - name: Instagram
-  class_name: instagram
+  class_name: social-instagram
   url : http://instagram.com/victorbersy
   color: "#3A6990"
 
 - name: Stack Overflow
-  class_name: stack-overflow
+  class_name: social-stack-overflow
   url : http://stackoverflow.com/users/3321058/victorbersy
   color: "#F68A1F"
