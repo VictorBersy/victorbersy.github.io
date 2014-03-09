@@ -21,6 +21,11 @@ title: Blog
                   <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
                   <div class="infos-block">
                     <p class="date"><i class="fi-calendar"></i> Publié le : {{ post.date | date: "%d/%m/%Y" }}</p>
+                    <p class="categories"><i class="fi-folder"></i>
+                    {% for category in post.categories %}
+                      <a href="{{ base.url }}/blog/categories/#{{ category }}">{{ category | capitalize }}</a>{% if post.categories.size > 1 and post.categories.last != category %}, {% endif %}
+                    {% endfor %}
+                    </p>
                   </div>
                 </div>
                 <div class="content">
