@@ -22,7 +22,7 @@
         <ul class="right">
         {% if site.categories.size > 0 %}
           <li class="active has-dropdown">
-            <a href="{{ base.url }}/blog/categories/">Categories</a>
+            <a href="{{ base.url }}/blog/categories/">Catégories</a>
             <ul class="dropdown">
             {% for category in site.categories %}
               <li><a href="{{ base.url }}/blog/categories/#{{ category.first }}">{{ category.first | capitalize }}</a></li>
