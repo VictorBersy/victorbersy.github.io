@@ -4,6 +4,7 @@ title: Blog
 ---
 
       <div class="row">
+      {% if paginator.posts.size > 0 %}
         <div class="small-12 medium-9 large-8 columns articles">
     <!-- DYNAMIC ARTICLE -->
         {% for post in paginator.posts %}
@@ -66,3 +67,10 @@ title: Blog
           </div>
           {% endif %}
         </div>
+      {% else %}
+      <div class="small-12 medium-9 large-8 columns">
+        <h4>No posts yet !</h4>
+        <p>Create a new post in _posts/ folder, at the root of your setup.</p>
+        <p>See <a href="http://jekyllrb.com/">jekyllrb.com</a> and <a href="https://github.com/VictorBersy/victorbersy.github.io">github.com/VictorBersy/victorbersy.github.io</a> for more informations.</p>
+      </div>
+      {% endif %}
