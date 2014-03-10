@@ -41,7 +41,7 @@
 - name: Foursquare
   class_name: social-foursquare
   url : https://fr.foursquare.com/user/3016449
-  color: "#006ED2"
+  color: "#24B2ED"
 
 - name: Instagram
   class_name: social-instagram
