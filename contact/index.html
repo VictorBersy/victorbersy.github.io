@@ -5,7 +5,9 @@ title: Contact me !
 <ul class="contact-square large-block-grid-5 medium-block-grid-4 small-block-grid-3">
 	{% for contact in site.data.contacts %}
 	<li style="background: {{ contact.color }};">
-    	<a href="{{ contact.url }}">{{ contact.name }}</a>
+		<a href="{{ contact.url }}">
+			<i class="fi-{{ contact.class_name }} icon"></i>
+    	</a>
 	</li>
 	{% endfor %}
 </ul>

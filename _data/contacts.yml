@@ -1,32 +1,39 @@
-- name: Github
-  class_name: social-github
-  url : https://github.com/VictorBersy/
-  color: "#171515"
-
+# class_name are icons from Foundation Icon Font 3 http://zurb.com/playground/foundation-icon-fonts-3
+# color is for background colors.
 - name: Twitter
   class_name: social-twitter
   url : https://twitter.com/VictorBersy/
   color: "#55ACEE"
-
-- name: Email
-  class_name: mail
-  url : mailto:victor.bersy+website@gmail.com
-  color: "#7AF6FF"
-
-- name: Facebook
-  class_name: social-facebook
-  url : https://www.facebook.com/victor.bersy/
-  color: "#3B5998"
 
 - name: Google +
   class_name: social-google-plus
   url : https://plus.google.com/+VictorBersy/
   color: "#DD4B39"
 
+- name: Email
+  class_name: mail
+  url : mailto:victor.bersy+website@gmail.com
+  color: "#57DF5C"
+
+- name: Facebook
+  class_name: social-facebook
+  url : https://www.facebook.com/victor.bersy/
+  color: "#3B5998"
+
 - name: Last.Fm
   class_name: social-lastfm
   url : http://www.lastfm.fr/user/bigvivi/
   color: "#D11008"
+
+- name: Stack Overflow
+  class_name: social-stack-overflow
+  url : http://stackoverflow.com/users/3321058/victorbersy
+  color: "#F68A1F"
+
+- name: Github
+  class_name: social-github
+  url : https://github.com/VictorBersy/
+  color: "#171515"
 
 - name: Rdio
   class_name: social-rdio
@@ -38,17 +45,12 @@
   url : http://steamcommunity.com/id/bigvivi/
   color: "#020202"
 
-- name: Foursquare
-  class_name: social-foursquare
-  url : https://fr.foursquare.com/user/3016449
-  color: "#24B2ED"
-
 - name: Instagram
   class_name: social-instagram
   url : http://instagram.com/victorbersy
   color: "#3A6990"
 
-- name: Stack Overflow
-  class_name: social-stack-overflow
-  url : http://stackoverflow.com/users/3321058/victorbersy
-  color: "#F68A1F"
+- name: Foursquare
+  class_name: social-foursquare
+  url : https://fr.foursquare.com/user/3016449
+  color: "#24B2ED"

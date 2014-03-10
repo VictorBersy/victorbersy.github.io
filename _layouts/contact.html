@@ -6,21 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/stylesheets/contact.css" />
+    <link rel="stylesheet" href="/stylesheets/foundation-icons.css" />
     <script src="/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-
-
+  {% include contact/top-bar.html %}
     <div class="site">
-
-    <div class="row">
-      <div class="large-12 columns">
-        {{ content }}
+      <div class="row">
+        <div class="large-12 columns">
+          {{ content }}
+        </div>
       </div>
-    </div>
-
-
-
     </div><!--- /site -->
   </body>
 </html>
