@@ -36,7 +36,7 @@ title: Projets
 					</div>
 					{% endif %}
 	            	<p class="description">{{ project["description"] }}</p>
-	            	<a href="#" class="button link">Voir sur Github &rarr;</a>
+	            	<a href="{{ project["link"]}}" class="button link">Voir sur Github &rarr;</a>
 	            </li>
 				{% endfor %}
 	          </ul>
@@ -70,7 +70,7 @@ title: Projets
 					</div>
 					{% endif %}
 	            	<p class="description">{{ project["description"] }}</p>
-	            	<a href="#" class="button link">Voir sur Github &rarr;</a>
+	            	<a href="{{ project["link"]}}" class="button link">Voir sur Github &rarr;</a>
 	            </li>
 				{% endfor %}
 	          </ul>
