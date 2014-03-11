@@ -41,6 +41,6 @@ others:
   - name: "victorbersy.github.io"
     description: "Code source du site sur lequel vous êtes actuellement."
     languages: ["Ruby"]
-    tags: []
+    tags: ["Jekyll", "Blog"]
     logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
     link: "https://github.com/VictorBersy/victorbersy.github.io"
