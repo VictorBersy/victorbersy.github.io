@@ -1,0 +1,46 @@
+# pickup is useful to highlight your best projects.
+pickup:
+  - name: "Jarvis"
+    description:
+      "Jarvis est mon premier \"grand\" projet Ruby. C'est un robot qui me sert d'assistant
+      personnel via Twitter. On interagit avec lui en le mentionnant. Il est
+      ensuite capable de nous répondre un simple texte statique, ou une réponse
+      plus complexe, provenant d'une commande exécutée côté serveur par exemple.
+      Il est extensible via un système de plugins simple à mettre en place."
+    languages: ["Ruby"]
+    tags: ["Twitter", "Bot", "ServerSide"]
+    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
+    link: "https://github.com/VictorBersy/Jarvis"
+
+  - name: "Spotless Mind"
+    description:
+      "Spotless Mind est un petit projet permettant de supprimer tous les favoris
+       d'une personne sur Twitter. C'est une idée que j'ai eu en voyant quelques
+       personne sur Twitter faire ceci dès leur rupture. Il suffit de 4 étapes
+       pour parvenir à ses fins."
+    languages: ["PHP"]
+    tags: ["Twitter", "Web"]
+    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
+    link: "https://github.com/VictorBersy/SpotlessMind"
+
+  - name: "I'm Watching You"
+    description:
+      "ImWatchingYou était mon premier essai avec NodeJS. J'ai choisi d'utiliser
+       une fois de plus l'API Twitter et de cette fois-ci, sauvegarder tout ce
+       qu'il s'y passe. ImWatchingYou permet tout simplement de sauvegarder
+       tweets et photos poster sur pic.twitter.com en base de données, ici,
+       MongoDB.\n
+       Une réécriture en Ruby est en cours."
+    languages: ["Ruby", "NodeJS"]
+    tags: ["Twitter", "CLI", "MongoDB"]
+    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
+    link: "https://github.com/VictorBersy/imwatchingyou"
+
+
+others:
+  - name: "victorbersy.github.io"
+    description: "Code source du site sur lequel vous êtes actuellement."
+    languages: ["Ruby"]
+    tags: []
+    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
+    link: "https://github.com/VictorBersy/victorbersy.github.io"

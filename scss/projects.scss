@@ -1,0 +1,49 @@
+@import "settings";
+@import "normalize";
+
+// Grid
+$row-width: rem-calc(1920);
+
+// Topbar
+$topbar-height: 70px;
+$topbar-margin-bottom: rem-calc(30);
+$topbar-title-font-size: rem-calc(19);
+$topbar-link-font-size: rem-calc(16);
+$topbar-link-bg-hover: darken($topbar-bg, 5%);
+.top-bar > .title-area {
+	background: darken($topbar-bg, 5%);
+}
+
+// Body
+$body-bg: url("../assets/noisy_net.png") repeat;
+
+// Types
+$header-font-color: #EBEBEB;
+$subheader-font-color: darken($header-font-color, 30%) !default;
+
+
+.projects {
+	color: white;
+	padding-top: rem-calc(60);
+	.row {margin-bottom: rem-calc(60);}
+	.project-card {
+		.description {
+			margin-top: rem-calc(10);
+		}
+		.languages {
+			.ruby   {background-color: #B61D1D;}
+			.php    {background-color: #344BC5;}
+			.nodejs {background-color: #299B25;}
+		}
+		.link       {background-color: #1A807A;}
+		.link:hover {background-color: #0F89AF;}
+		.logo {
+			margin: auto;
+			max-width: rem-calc(100);
+			display: block;
+		}
+	}
+
+}
+
+@import "foundation";

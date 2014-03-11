@@ -1,0 +1,79 @@
+---
+layout: projects
+title: Projets
+---
+	<div class="row">
+		<div class="small-12 columns">
+			<h1 class="text-center">Projets</h1>
+		</div>
+	</div>
+
+	<div class="projects">
+		<div class="row pickup">
+	        <div class="small-3 columns">
+	          <h2>Sélection</h2>
+	        </div>
+	        <div class="small-9 columns">
+	          <ul class="small-block-grid-3">
+				{% for project in site.data.projects["pickup"] %}
+	            <li class="project-card">
+	            	{% if project["logo"] %}
+	            	<img class="logo" src="{{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}">
+	            	{% endif %}
+	            	<h3 class="text-center">{{ project["name"] }}</h3>
+	            	{% if project["tags"].size > 0 %}
+	            	<div class="tags">
+						{% for tag in project["tags"] %}
+						<span class="label">#{{ tag }}</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+					{% if project["languages"].size > 0 %}
+	            	<div class="languages">
+						{% for language in project["languages"] %}
+						<span class="label {{ language | downcase }}">{{ language }}</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+	            	<p class="description">{{ project["description"] }}</p>
+	            	<a href="#" class="button link">Voir sur Github &rarr;</a>
+	            </li>
+				{% endfor %}
+	          </ul>
+	        </div>
+		</div>
+
+		<div class="row others">
+	        <div class="small-3 columns">
+	          <h2>Autres</h2>
+	        </div>
+	        <div class="small-9 columns">
+	          <ul class="small-block-grid-4">
+				{% for project in site.data.projects["others"] %}
+	            <li class="project-card">
+	            	{% if project["logo"] %}
+	            	<img class="logo" src="{{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}">
+	            	{% endif %}
+	            	<h3 class="text-center">{{ project["name"] }}</h3>
+	            	{% if project["tags"].size > 0 %}
+	            	<div class="tags">
+						{% for tag in project["tags"] %}
+						<span class="label">#{{ tag }}</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+					{% if project["languages"].size > 0 %}
+	            	<div class="languages">
+						{% for language in project["languages"] %}
+						<span class="label {{ language | downcase }}">{{ language }}</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+	            	<p class="description">{{ project["description"] }}</p>
+	            	<a href="#" class="button link">Voir sur Github &rarr;</a>
+	            </li>
+				{% endfor %}
+	          </ul>
+	        </div>
+		</div>
+	</div>
