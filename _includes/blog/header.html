@@ -14,7 +14,7 @@
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
-          <h1><a href="{{ base.url }}/blog/"><i class="fi-home"></i>Blog</a></h1>
+          <h1><a href="{{ base.url }}/"><i class="fi-home"></i>Blog</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
       </ul>
@@ -22,17 +22,17 @@
         <ul class="right">
         {% if site.categories.size > 0 %}
           <li class="active has-dropdown">
-            <a href="{{ base.url }}/blog/categories/">Catégories</a>
+            <a href="{{ base.url }}/categories/">Catégories</a>
             <ul class="dropdown">
             {% for category in site.categories %}
-              <li><a href="{{ base.url }}/blog/categories/#{{ category.first }}">{{ category.first | capitalize }}</a></li>
+              <li><a href="{{ base.url }}/categories/#{{ category.first }}">{{ category.first | capitalize }}</a></li>
             {% endfor %}
             </ul>
           </li>
         {% endif %}
         </ul>
         <ul class="left">
-          <li><a href="{{ base.url }}/blog/posts/">Liste articles</a></li>
+          <li><a href="{{ base.url }}/posts/">Liste articles</a></li>
           <li><a href="{{ base.url }}/projects/">Projets</a></li>
           <li><a href="{{ base.url }}/contact/">Contact</a></li>
         </ul>

@@ -1,17 +1,76 @@
 ---
-layout: default
-title: Your New Jekyll Site on Zurb Foundation
+layout: blog
+title: Blog
 ---
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div id="home">
-          <h1>Blog Posts</h1>
-          <ul class="posts">
-            {% for post in site.posts %}
-              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
+      <div class="row">
+      {% if paginator.posts.size > 0 %}
+        <div class="small-12 medium-9 large-8 columns articles">
+    <!-- DYNAMIC ARTICLE -->
+        {% for post in paginator.posts %}
+          <div class="row">
+            <div class="small-12 columns">
+              <article>
+              {% if post.header-image %}
+                <header>
+                  <a class="article-img" href="#">
+                    <img src="/images/{{ post.header-image }}">
+                  </a>
+                </header>
+              {% endif %}
+                <div class="infos">
+                  <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+                  <div class="infos-block">
+                    <p class="date"><i class="fi-calendar"></i> Publié le : {{ post.date | date: "%d/%m/%Y" }}</p>
+                    <p class="categories"><i class="fi-folder"></i>
+                    {% for category in post.categories %}
+                      <a href="{{ base.url }}/categories/#{{ category }}">{{ category | capitalize }}</a>{% if post.categories.size > 1 and post.categories.last != category %}, {% endif %}
+                    {% endfor %}
+                    </p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>
+                    {{ post.excerpt }} <a href="{{ post.url }}">Lire la suite &rarr;</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        {% endfor %}
+    <!-- END DYNAMIC ARTICLE -->
+          {% if paginator.total_pages > 1 %}
+          <div class="row">
+            <div class="pagination">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+              {% else %}
+                <span>&laquo; Prev</span>
+              {% endif %}
+
+              {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                  <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% else %}
+                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+              {% endfor %}
+
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+              {% else %}
+                <span>Next &raquo;</span>
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
         </div>
+      {% else %}
+      <div class="small-12 medium-9 large-8 columns">
+        <h4>No posts yet !</h4>
+        <p>Create a new post in _posts/ folder, at the root of your setup.</p>
+        <p>See <a href="http://jekyllrb.com/">jekyllrb.com</a> and <a href="https://github.com/VictorBersy/victorbersy.github.io">github.com/VictorBersy/victorbersy.github.io</a> for more informations.</p>
       </div>
-    </div>
+      {% endif %}
