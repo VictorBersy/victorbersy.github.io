@@ -20,7 +20,7 @@ title: Projets
 	            	{% if project["logo"] %}
 	            	<img class="logo" src="{{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}">
 	            	{% endif %}
-	            	<h3 class="text-center">{{ project["name"] }}</h3>
+	            	<h3>{{ project["name"] }}</h3>
 	            	{% if project["tags"].size > 0 %}
 	            	<div class="tags">
 						{% for tag in project["tags"] %}
@@ -54,7 +54,7 @@ title: Projets
 	            	{% if project["logo"] %}
 	            	<img class="logo" src="{{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}">
 	            	{% endif %}
-	            	<h3 class="text-center">{{ project["name"] }}</h3>
+	            	<h3>{{ project["name"] }}</h3>
 	            	{% if project["tags"].size > 0 %}
 	            	<div class="tags">
 						{% for tag in project["tags"] %}
