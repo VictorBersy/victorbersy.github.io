@@ -19,7 +19,12 @@ $topbar-link-font-size: rem-calc(16);
 // Types
 $header-font-color: #EBEBEB;
 $subheader-font-color: darken($header-font-color, 30%) !default;
+$code-font-weight: normal;
 
+// Code
+.highlight {
+	margin-bottom: 20px;
+}
 
 // Article
 article {
