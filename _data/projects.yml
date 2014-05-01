@@ -2,15 +2,18 @@
 pickup:
   - name: "Jarvis"
     description:
-      "Jarvis est mon premier \"grand\" projet Ruby. C'est un robot qui me sert d'assistant
-      personnel via Twitter. On interagit avec lui en le mentionnant. Il est
-      ensuite capable de nous répondre un simple texte statique, ou une réponse
-      plus complexe, provenant d'une commande exécutée côté serveur par exemple.
-      Il est extensible via un système de plugins simple à mettre en place."
+      "Jarvis est mon premier grand projet Ruby. C'est un robot, un bot, qui se veut
+      extensible, facile à utiliser, autant pour les développeurs que pour les
+      utilisateurs. Il s'articule autour de nombreuses extensions : sources, receveurs et
+      clients, qui ont chacun un rôle précis.
+      Les sources lui fournissent des données à traiter (un tweet par exemple).
+      Les receveurs permettent d'éxecuter certaines tâches en fonction de ce qu'il
+      reçoit. Et enfin les clients servent de pacerelle entre les services et les
+      receveurs."
     languages: ["Ruby"]
-    tags: ["Twitter", "Bot", "ServerSide"]
+    tags: ["Bot", "ServerSide", "Automatisation"]
     logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
-    link: "https://github.com/VictorBersy/Jarvis"
+    link: "https://github.com/Jarvis-Bot/"
 
   - name: "Spotless Mind"
     description:
