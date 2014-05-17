@@ -1,0 +1,67 @@
+presentation: "Développeur, étudiant à l’école de l’EPSI Paris en bachelor 3, à la recherche d’un contract d’alternance dans la région Parisienne."
+scholarship:
+  - date: "2014 - 2015"
+    place: "EPSI Paris."
+    description: "Bachelor Informatique, 3e année (bac + 3). En cours de formation."
+  - date: "2011 - 2013"
+    place: "Lycée privé de la CCI de Nîmes."
+    description: "BTS Services Informatiques aux Organisations, Solutions Logicielles et Applications Métiers (SLAM)."
+  - date: "2009 - 2011"
+    place: "Lycée Technologique Dhuoda, Nîmes."
+    description: "Baccalauréat Sciences et Technologies de l'Ingénieur, spécialisation électronique."
+
+experience:
+  - title: "Développeur Ruby, indépendant"
+    date: "Octobre 2013, en cours"
+    description: "Création d’un bot, simple, flexible, et extensible à souhait."
+    learned:
+      - "Système de mises à jour automatiques"
+      - "Création d'un système de packages pour la gestion des addons et dépendances"
+      - "Interactions avec de nombreux services"
+      - "Interface en CLI agréable"
+      - "Metaprogramming"
+  - title: "Développeur, ID Alizés"
+    date: "Nîmes — Janvier 2013, 2 mois"
+    description: "Refonte, d’un annuaire d’utilisateurs et d’entreprises, créé grâce au framework et CMS interne, GSite."
+    learned:
+      - "Interface dynamique en jQuery"
+      - "Utilisation d'un CMS en PHP 4 et 5, peu documenté"
+      - "Travail en équipe"
+  - title: "Développeur, Pillows Factory"
+    date: "Bruxelles — Mai 2012, 2 mois"
+    description: "Réalisation de divers thèmes et plugins pour Wordpress."
+    learned:
+      - "Utilisation du système de template intégré à Wordpress"
+      - "Intégration de données personnalisables par le client"
+      - "Création de thèmes Wordpress"
+      - "Initiation au framework HTML/CSS Foundation"
+
+skills:
+  - Langages: "HTML, CSS, PHP, Ruby, NodeJS"
+  - Frameworks: "Silex (basé sur Symfony), Foundation (HTML / CSS Responsive), Rails (Ruby/web)"
+  - Templates: "ERB, Liquid, Twig"
+  - SGBD: "MySQL, MongoDB, RethinkDB"
+  - Outils : "Git, Github, BitBucket, SVN"
+  - Systèmes : "Linux, Windows"
+
+languages:
+  - lang: "Anglais"
+    level: "Capable de soutenir une conversation en langages courant et technique. Contacts écrits réguliers avec des amis, voyage à San Francisco durant 2 mois en 2014."
+
+extra:
+  - title: "Informatique"
+    description:
+    - "Acquisition d’un serveur personnel, en autohébergement"
+    - "OS : Ubuntu"
+    - "Environnements LAMP, Ruby, Rails, NodeJS, MongoDB, RethinkDB"
+    - "Serveur de média via Plex et Mediatomb"
+    - "Divers projets open-source, la majeure partie visible sur Github (github.com/VictorBersy)"
+    - "Réalisation en cours :"
+    - "Jeu de gestion dans le navigateur"
+    - "Système permettant de sauvegarder sa timeline Twitter en base de données"
+    - "Site permettant de supprimer les tweets en rapport avec quelqu’un"
+    - "Robot logiciel, programmable à souhait, éxecutant des scénarios à la demande"
+  - title: "Culturel"
+    description:
+    - "Passion pour le cinéma, la musique “indie” et la photographie."
+    - "Audiophile amateur, en quête de matériel toujours plus sophistiqué, et de nouveaux artistes."

@@ -1,0 +1,85 @@
+<div class="show-for-large-up large-2 columns">
+  <h1>{{site.data.about_me["name"]}}<h1>
+  <img src="{{site.data.about_me["photo"]}}?s=350">
+  <p>{{site.data.about_me["short_bio"]}}</p>
+</div>
+<div class="small-12 large-10 columns">
+
+  <h1>Présentation</h1>
+  <div class="row">
+    <div class="small-5 medium-3 hide-for-large-up columns">
+      <img class="show-for-small-only" src="{{site.data.about_me["photo"]}}?s=128">
+      <img class="show-for-medium-only" src="{{site.data.about_me["photo"]}}?s=160">
+    </div>
+    <div class="small-7 medium-9 large-12 columns">
+      <p>{{site.data.resume.presentation}}</p>
+    </div>
+  </div>
+
+  <h1>Formations</h1>
+  {% for scholarship in site.data.resume.scholarship %}
+  <div class="row scholarship">
+    <div class="show-for-small-only small-12 columns">
+      <span class="label">{{scholarship.date}}</span>
+      <span class="label success"> {{scholarship.place}}</span>
+      <p>{{scholarship.description}}</p>
+    </div>
+    <div class="show-for-medium-up medium-12 columns">
+      <span class="label">{{scholarship.date}}</span>
+      <span class="label success"> {{scholarship.place}}</span>
+      <span>{{scholarship.description}}</span>
+    </div>
+  </div>
+  {% endfor %}
+
+  <h1>Expériences</h1>
+  <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+  {% for experience in site.data.resume.experience %}
+    <li>
+      <h3>{{experience.title}}</h3>
+      <span class="label">{{experience.date}}</span>
+      <p>{{experience.description}}</p>
+      <h3>Acquis</h3>
+      <ul>
+      {% for learned in experience.learned %}
+      <li>{{learned}}</li>
+      {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+  </ul>
+
+  <h1>Compétences</h1>
+  {% for skills_row in site.data.resume.skills %}
+    {% for skills in skills_row %}
+    <div class="row">
+      <div class="small-12 columns">
+        <p><strong>{{skills[0]}}</strong> : {{skills[1]}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  {% endfor %}
+
+  <h1>Langues</h1>
+  <div class="row">
+    {% for lang in site.data.resume.languages %}
+    <div class="small-12 columns">
+      <p><strong>{{lang.lang}}</strong> : {{lang.level}}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h1>Centres D’intérêts</h1>
+    {% for extra in site.data.resume.extra %}
+    <div class="row">
+      <div class="small-12 columns">
+        <strong>{{extra.title}}</strong>
+        <ul class="no-bullet">
+        {% for description in extra.description %}
+        <li>{{description}}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+  </div>

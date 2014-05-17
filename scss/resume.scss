@@ -1,0 +1,26 @@
+@import "settings";
+@import "normalize";
+@import "colors";
+
+$row-width: rem-calc(1600);
+
+// Topbar
+$topbar-height: 70px;
+$topbar-margin-bottom: rem-calc(30);
+$topbar-title-font-size: rem-calc(19);
+$topbar-link-font-size: rem-calc(16);
+$topbar-link-bg-hover: darken($topbar-bg, 5%);
+.top-bar > .title-area {
+	background: darken($topbar-bg, 5%);
+}
+
+// Body
+$body-bg: url("../assets/noisy_net.png") repeat;
+
+// Resume
+$paragraph-margin-bottom: rem-calc(0);
+$header-font-color: #EBEBEB;
+
+.scholarship {margin-bottom: 10px;}
+$list-side-margin-no-bullet: 15px;
+@import "foundation";
