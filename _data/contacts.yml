@@ -10,6 +10,11 @@
   url : https://plus.google.com/+VictorBersy/
   color: "#DD4B39"
 
+- name: Linkedin
+  class_name: social-linkedin
+  url : http://fr.linkedin.com/pub/victor-bersy/97/794/603
+  color: "#007BB6"
+
 - name: Email
   class_name: mail
   url : mailto:victor.bersy+website@gmail.com
