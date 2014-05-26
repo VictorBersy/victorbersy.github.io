@@ -15,6 +15,18 @@ pickup:
     logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
     link: "https://github.com/Jarvis-Bot/"
 
+  - name: "NextEpisode"
+    description:
+      "Next Episode est un projet en cours de réalisation avec un ami designer.
+       C'et mon premier projet Rails après avoir appris Ruby pendant plusieurs mois.
+       Après avoir effectué une étude de marché, nous avons remarqué qu'il
+       manquait un site complet et simple, et c'est ce à quoi nous aspirons.
+      "
+    languages: ["Rails", "Ruby"]
+    tags: ["Séries TV", "Web", "Design"]
+    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
+    link: "https://github.com/NextEpisode/NextEpisode"
+
   - name: "Spotless Mind"
     description:
       "Spotless Mind est un petit projet permettant de supprimer tous les favoris
@@ -25,6 +37,21 @@ pickup:
     tags: ["Twitter", "Web"]
     logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
     link: "https://github.com/VictorBersy/SpotlessMind"
+
+others:
+  - name: "victorbersy.github.io"
+    description: "Code source du site sur lequel vous êtes actuellement."
+    languages: ["Ruby"]
+    tags: ["Jekyll", "Blog"]
+    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
+    link: "https://github.com/VictorBersy/victorbersy.github.io"
+
+  - name: "jarvis-bot.github.io"
+    description: "Code source de la présentation et de la documentation de Jarvis."
+    languages: ["Ruby"]
+    tags: ["Jekyll", "Jarvis"]
+    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
+    link: "https://github.com/Jarvis-Bot/jarvis-bot.github.io"
 
   - name: "I'm Watching You"
     description:
@@ -38,12 +65,3 @@ pickup:
     tags: ["Twitter", "CLI", "MongoDB"]
     logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
     link: "https://github.com/VictorBersy/imwatchingyou"
-
-
-others:
-  - name: "victorbersy.github.io"
-    description: "Code source du site sur lequel vous êtes actuellement."
-    languages: ["Ruby"]
-    tags: ["Jekyll", "Blog"]
-    logo: # {{ base.url }}/assets/projects/{{  project["name"] |downcase }}/{{ project["logo"] }}
-    link: "https://github.com/VictorBersy/victorbersy.github.io"
