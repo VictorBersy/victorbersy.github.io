@@ -11,6 +11,13 @@ scholarship:
     description: "Baccalauréat Sciences et Technologies de l'Ingénieur, spécialisation électronique."
 
 experience:
+  - title: "Développeur Rails, indépendant"
+    date: "Avril 2014, en cours"
+    description: "Création d’un site de gestion et suivi de séries TV, nextepisode.io."
+    learned:
+      - "Tests unitaires"
+      - "Intégration continue"
+      - "Couverture de code (code coverage)."
   - title: "Développeur Ruby, indépendant"
     date: "Octobre 2013, en cours"
     description: "Création d’un bot, simple, flexible, et extensible à souhait."
