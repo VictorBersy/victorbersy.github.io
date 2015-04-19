@@ -216,5 +216,4 @@ pip-log.txt
 
 # victorbersy.github.io
 .sass-cache/*
-_drafts/*
 _site/*
