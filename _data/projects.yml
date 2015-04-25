@@ -8,7 +8,7 @@ pickup:
       clients, qui ont chacun un rôle précis.
       Les sources lui fournissent des données à traiter (un tweet par exemple).
       Les receveurs permettent d'éxecuter certaines tâches en fonction de ce qu'il
-      reçoit. Et enfin les clients servent de pacerelle entre les services et les
+      reçoit. Et enfin les clients servent de passerelle entre les services et les
       receveurs."
     languages: ["Ruby"]
     tags: ["Bot", "ServerSide", "Automatisation"]
