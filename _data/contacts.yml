@@ -45,6 +45,11 @@
   url : https://paypal.me/VictorBersy/
   color: "#003087"
 
+- name: YouTube
+  class_name: social-youtube
+  url : https://www.youtube.com/channel/UCOFdnOkBFjjDVhC6yJ5kUXg
+  color: "#CD201F"
+
 - name: Github
   class_name: social-github
   url : https://github.com/VictorBersy/
