@@ -40,6 +40,11 @@
   url : http://stackoverflow.com/users/3321058/victorbersy
   color: "#F68A1F"
 
+- name: Paypal
+  class_name: paypal
+  url : https://paypal.me/VictorBersy/
+  color: "#003087"
+
 - name: Github
   class_name: social-github
   url : https://github.com/VictorBersy/
