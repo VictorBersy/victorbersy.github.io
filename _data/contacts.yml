@@ -30,6 +30,11 @@
   url : http://www.lastfm.fr/user/bigvivi/
   color: "#D11008"
 
+- name: Spotify
+  class_name: social-spotify
+  url : https://open.spotify.com/user/bigvivi
+  color: "#2EBD59"
+
 - name: Stack Overflow
   class_name: social-stack-overflow
   url : http://stackoverflow.com/users/3321058/victorbersy
@@ -40,10 +45,6 @@
   url : https://github.com/VictorBersy/
   color: "#171515"
 
-- name: Rdio
-  class_name: social-rdio
-  url : http://www.rdio.com/people/VictorBersy/
-  color: "#006ED2"
 
 - name: Steam
   class_name: social-steam
