@@ -55,16 +55,15 @@
   url : https://github.com/VictorBersy/
   color: "#171515"
 
+- name: Instagram
+  class_name: social-instagram
+  url : http://instagram.com/victorbersy
+  color: "#3A6990"
 
 - name: Steam
   class_name: social-steam
   url : http://steamcommunity.com/id/bigvivi/
   color: "#020202"
-
-- name: Instagram
-  class_name: social-instagram
-  url : http://instagram.com/victorbersy
-  color: "#3A6990"
 
 - name: Foursquare
   class_name: social-foursquare
